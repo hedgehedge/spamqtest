@@ -12,7 +12,7 @@ public class WebController {
 
     @RequestMapping(value="/api/addmessage")
     public String addMessage(@RequestParam("msg")String msg) {
-        sender.send(msg);
+        //sender.send(msg);
 
         return "Inserted: " + msg;
     }
